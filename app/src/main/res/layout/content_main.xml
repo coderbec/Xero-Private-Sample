@@ -16,5 +16,5 @@
         android:layout_width="wrap_content"
         android:id="@+id/contentText"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Press the floating action button to initiate sample API call..." />
 </RelativeLayout>
