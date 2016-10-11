@@ -16,3 +16,9 @@ Open **/app/src/main/res/values/strings.xml** and add 2 tags for api_key and api
 `<string name="api_secret">ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>`
 
 Open **/app/src/main/java/com/becmartin/xeroandroidprivate/XeroAPI.java** and update the PrivateKey getPrivateKey() string with the key the private auth key remembering to make sure the key lines are split with a `\n`
+
+# Things to note
+
+When doing a POST request make sure the AVD or device datetime is current time or you will get an error saying...
+
+`oauth_problem=timestamp_refused&oauth_problem_advice=The timestamp is too old, it must be at most 300 seconds before the server's`
